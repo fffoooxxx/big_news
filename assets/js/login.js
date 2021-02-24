@@ -60,7 +60,7 @@ $(function () {
         }
         console.log(12345);
         localStorage.setItem("token", res.token);
-        // location.href = "/index.html";
+        location.href = "/index.html";
       },
     });
   });
