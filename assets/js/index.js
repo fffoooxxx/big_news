@@ -30,6 +30,7 @@ function getUserInfo() {
     //   if (message === "身份认证失败！" && status === 1) {
     //     localStorage.removeItem("token");
     //     location.href = "/login.html";
+    //
     //   }
     // },
   });
