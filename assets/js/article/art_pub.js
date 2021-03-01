@@ -72,7 +72,7 @@ $(function () {
         // 5. 将文件对象，存储到 fd 中
         fd.append("cover_img", blob);
         // 6. 发起 ajax 数据请求
-        publishArticle(fd);
+        publishArticle(fd); // 定义文章方法 publishArticle()是一个异步方法
       });
     fd.forEach((k, v) => {
       // 遍历出数据

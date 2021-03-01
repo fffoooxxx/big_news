@@ -121,7 +121,7 @@ $(function () {
           //   q.pagenum = q.pagenum === 1 ? 1 : q.pagenum - 1;
           // }
           if (length === 1 && q.pagenum !== 1) {
-            p.pagenum--
+            p.pagenum--;
           }
           layer.msg("删除文章成功！");
           initTable();
@@ -130,5 +130,10 @@ $(function () {
 
       layer.close(index);
     });
+  });
+
+  // 监听编辑按钮的事件
+  $("body").on("click", ".btn_edit", function () {
+    location.href = "/article/art_edit.html?id=" + $(this).attr("data-id");
   });
 });
